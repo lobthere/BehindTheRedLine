@@ -1,3 +1,3 @@
-Hi\n
-this is our little project of a game.\n
+Hi
+this is our little project of a game.
 thanks for visiting
