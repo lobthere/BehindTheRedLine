@@ -1,0 +1,187 @@
+Tue Dec 19 22:06:10 2023
+Windows-10-10.0.14393
+Ren'Py 8.1.3.23091805
+ 
+
+Bootstrap to the start of init.init. took 0.29s
+Early init. took 0.01s
+Loader init. took 0.13s
+Loading error handling. took 0.15s
+Loading script. took 0.92s
+Loading save slot metadata. took 0.17s
+Loading persistent. took 0.00s
+Running init code. took 0.25s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Sylviane\\AppData\\Roaming/RenPy/backups\\Behind the Red Line _test_':
+Dump and make backups. took 0.42s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.10s
+Prepare screens took 0.40s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.10s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon(TM) R2 Graphics'
+Version: b'4.5.13399 Compatibility Profile Context 15.201.1101.0'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1288, 745) drawable=(1288, 745)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 1280, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 674, in visit_all
+    for d in self.visit():
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1891, in visit
+    self.update()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1868, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 2381, in apply_custom_tags
+    func = renpy.config.custom_text_tags.get(tag, None)
+AttributeError: 'str' object has no attribute 'get'
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+AttributeError: 'str' object has no attribute 'get'
+While handling exception:
+Traceback (most recent call last):
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\execution.py", line 596, in run
+    node.execute()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 1280, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 674, in visit_all
+    for d in self.visit():
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1891, in visit
+    self.update()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1868, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 2381, in apply_custom_tags
+    func = renpy.config.custom_text_tags.get(tag, None)
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\error.py", line 140, in report_exception
+    renpy.game.invoke_in_new_context(
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\game.py", line 287, in invoke_in_new_context
+    return callable(*args, **kwargs)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\error.py", line 48, in call_exception_screen
+    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\screen.py", line 481, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 674, in visit_all
+    for d in self.visit():
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1891, in visit
+    self.update()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1868, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 2381, in apply_custom_tags
+    func = renpy.config.custom_text_tags.get(tag, None)
+AttributeError: 'str' object has no attribute 'get'
+
+Full traceback:
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\main.py", line 144, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\execution.py", line 955, in run_context
+    context.run()
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 1280, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 674, in visit_all
+    for d in self.visit():
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1891, in visit
+    self.update()
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 1868, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "C:\Users\Sylviane\Desktop\renpy-8.1.3-sdk\renpy\text\text.py", line 2381, in apply_custom_tags
+    func = renpy.config.custom_text_tags.get(tag, None)
+AttributeError: 'str' object has no attribute 'get'
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+  File "game/script.rpy", line 37, in script
+    show text "{glitch 5.0}{color=#0aad07}4 months earlier...{/glitch}{/color}"
+AttributeError: 'str' object has no attribute 'get'

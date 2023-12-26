@@ -1,0 +1,24 @@
+image splash = "warnings-splashscreen.png"
+
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "{size=+10}EclipsedHeart Studios" with dissolve
+    with Pause(3)
+
+    hide text with dissolve
+    with Pause(2)
+
+    play sound "audio/warnings-music.wav"
+
+    show splash with dissolve
+    with Pause(14)
+
+    hide text with dissolve
+    with Pause(3)
+
+    stop sound
+
+    return
+    with dissolve
